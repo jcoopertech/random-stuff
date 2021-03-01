@@ -73,8 +73,7 @@ class Board:
 
     def resolveNextDoors(self,Row,Col) -> list:
         NextDoors = []
-        NextDoorOpts = [(0,-1),(-1,-1),(-1,0),(-1,1),(0,1),(1,1),(1,0), \
-        (1,-1)]
+        NextDoorOpts = [(0,-1), (-1,-1), (-1,0), (-1,1), (0,1), (1,1), (1,0), (1,-1)]
         for NextDoorOpt in NextDoorOpts:
             NDoorRow = Row+NextDoorOpt[0]
             NDoorCol = Col+NextDoorOpt[1]
